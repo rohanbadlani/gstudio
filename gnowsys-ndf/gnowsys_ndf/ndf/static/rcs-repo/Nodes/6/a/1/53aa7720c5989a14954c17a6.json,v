@@ -1,0 +1,94 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2014.06.25.07.15.44;	author rohan;	state Exp;
+branches;
+next	;
+
+
+desc
+@This document (topic1 -- same_theme1 -- topic2) is created on 25 June 2014
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@{
+    "_id": {
+        "$oid": "53aa7720c5989a14954c17a6"
+    },
+    "_type": "GRelation",
+    "lang": null,
+    "name": "topic1 -- same_theme1 -- topic2",
+    "relation_type": {
+        "_id": {
+            "$oid": "53a91d75c5989a4099f42fcb"
+        },
+        "_type": "RelationType",
+        "access_policy": null,
+        "altnames": null,
+        "collection_set": [],
+        "comment_enabled": null,
+        "content": null,
+        "content_org": null,
+        "contributors": [],
+        "created_at": 1403611853510,
+        "created_by": 1,
+        "featured": null,
+        "group_set": [],
+        "inverse_name": "same_theme1",
+        "is_reflexive": null,
+        "is_symmetric": null,
+        "is_transitive": null,
+        "language": null,
+        "last_update": 1403700344606,
+        "location": [],
+        "login_required": null,
+        "member_of": [
+            {
+                "$oid": "53a91d37c5989a3fbaf69ab8"
+            }
+        ],
+        "modified_by": 1,
+        "name": "same_theme1",
+        "object_applicable_nodetype": null,
+        "object_cardinality": null,
+        "object_type": [
+            {
+                "$oid": "53a91d75c5989a4099f42fc5"
+            }
+        ],
+        "plural": null,
+        "post_node": [],
+        "prior_node": [],
+        "property_order": [],
+        "slug": null,
+        "start_publication": null,
+        "status": "DRAFT",
+        "subject_applicable_nodetype": null,
+        "subject_cardinality": null,
+        "subject_type": [
+            {
+                "$oid": "53a91d38c5989a3fbaf69ac4"
+            }
+        ],
+        "tags": [],
+        "type_of": [],
+        "url": null
+    },
+    "right_subject": {
+        "$oid": "53a91d75c5989a4099f42fc6"
+    },
+    "status": null,
+    "subject": {
+        "$oid": "53a91d75c5989a4099f42fc5"
+    }
+}@

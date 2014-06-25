@@ -91,24 +91,28 @@ def create_Topic(name, user_id):
 	"""
 	
 	print "Creating a GSystem Topic"
-	cursor = collection.Node.one({"name": u"Topic"})
-	topic_type = cursor
-	print topic_type
-	#change - am
-	cursor2 = collection.Node.one({"name": name, "_type": u"GSystem"}) #pick the topic related to wikidata
-	#print cursor2.count()
-	if (cursor2!=None):
-		print "Topic already exists"
-		return
-	else:
-		topic_type_id = topic_type._id
-		topic = collection.GSystem()
-		topic.name = name
-		topic.created_by = int(user_id)
-		topic.member_of.append(topic_type_id)
-		topic.save()
-		print topic
-		print "Created a topic -->" + name + "\n"
+	wiki_data = collection.Node.one({"name":u"WikiData", "_type":u"GSystemType"})
+	cursor = collection.Node.find({"name": u"Topic"})
+	for topic_type in cursor:
+		print topic_type
+		if wiki_data._id in topic_type.member_of:
+			#change - am
+			cursor2 = collection.Node.one({"name": name, "_type": u"GSystem"}) #pick the topic related to wikidata
+			#print cursor2.count()
+			if (cursor2!=None):
+				print "Topic already exists"
+				return
+			else:
+				topic_type_id = topic_type._id
+				topic = collection.GSystem()
+				topic.name = name
+				topic.created_by = int(user_id)
+				topic.member_of.append(topic_type_id)
+				topic.save()
+				print topic
+				print "Created a topic -->" + name + "\n"
+		else:
+			print "This is not the WikiData Topic\n"
 		
 def create_AttributeType(name, data_type, system_name, user_id):
 	"""

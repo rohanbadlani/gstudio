@@ -1,9 +1,14 @@
-head	1.2;
+head	1.3;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.3
+date	2014.06.25.07.15.44;	author rohan;	state Exp;
+branches;
+next	1.2;
 
 1.2
 date	2014.06.24.06.40.53;	author rohan;	state Exp;
@@ -21,9 +26,9 @@ desc
 @
 
 
-1.2
+1.3
 log
-@This document (same_theme1) is lastly updated by rohan status:DRAFT on 24 June 2014
+@This document (same_theme1) is lastly updated by rohan status:DRAFT on 25 June 2014
 @
 text
 @{
@@ -47,7 +52,7 @@ text
     "is_symmetric": null,
     "is_transitive": null,
     "language": null,
-    "last_update": 1403611853546,
+    "last_update": 1403700344606,
     "location": [],
     "login_required": null,
     "member_of": [
@@ -82,6 +87,17 @@ text
     "type_of": [],
     "url": null
 }@
+
+
+1.2
+log
+@This document (same_theme1) is lastly updated by rohan status:DRAFT on 24 June 2014
+@
+text
+@d22 1
+a22 1
+    "last_update": 1403611853546,
+@
 
 
 1.1
